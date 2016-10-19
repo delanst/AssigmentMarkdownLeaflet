@@ -16,7 +16,6 @@ shinyServer(function(input, output) {
     output$mymap <- renderLeaflet({
         airportMarkers %>% leaflet() %>%
             addProviderTiles("Esri.WorldImagery") %>%
-            addMarkers()
+            addMarkers() %>% setView(lat=50.901401519800004, lng=-4.48443984985, zoom=5)
     })
-    
 })

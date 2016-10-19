@@ -9,7 +9,7 @@ shinyUI(fluidPage(
   p("The data used for has been download from the following site with their many thanks."),
   a("HDX", "https://data.humdata.org/dataset/ourairports-bel"),
   h3("Airports belgium"),
-  strong("This is map with all airports in Belgium. These include international as small private airports."),
+  strong("This is map with all airports in Belgium. These include international airports as well small 'private' landingstrips."),
   leafletOutput("mymap")
  
 ))
